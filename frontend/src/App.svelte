@@ -1,5 +1,6 @@
 <script>
     import {onMount} from "svelte";
+    import Header from "./components/header.svelte"
 
     let songs = []
 
@@ -15,8 +16,8 @@
 
 
 <div class="container">
-    <!--<Header/>
-    <Catalog songs={songs}/>-->
+    <Header/>
+    <!--<Catalog songs={songs}/>-->
 </div>
 
 <style>
