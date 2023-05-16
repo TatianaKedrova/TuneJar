@@ -6,14 +6,20 @@ import org.springframework.stereotype.Component
 
 
 @Component
-class DataLoader(private val songRepository: SongRepository) {
+class DataLoader (private val repository: SongRepository) {
     @PostConstruct
     fun load() {
-        val songs = listOf(
-                Song(title = "Smells Like Teen Spirit", author = "Nirvana", year = 1991),
-                Song(title = "Billie Jean", author = "Michael Jackson", year = 1982)
+        val songList = listOf(
+                Song("Smells Like Teen Spirit",
+                        "Nirvana",
+                        1991),
+                Song("Billie Jean",
+                        "Michael Jackson",
+                        1982),
+
+
         )
-        songRepository.saveAll(songs)
-        println("Cargamos datos de prueba cuando arrancamos el servidor: $songs")
+        repository.saveAll(songList)
+        println("cargamos canciones: $songList")
     }
 }
