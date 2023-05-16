@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component
 
 
 @Component
-class DataLoader (private val repository: SongRepository) {
+class DataLoader (private val songRepository: SongRepository) {
     @PostConstruct
     fun load() {
         val songList = listOf(
@@ -19,7 +19,7 @@ class DataLoader (private val repository: SongRepository) {
 
 
         )
-        repository.saveAll(songList)
+        songRepository.saveAll(songList)
         println("cargamos canciones: $songList")
     }
 }
