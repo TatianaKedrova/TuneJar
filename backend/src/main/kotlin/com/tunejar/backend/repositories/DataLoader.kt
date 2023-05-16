@@ -4,7 +4,6 @@ import jakarta.annotation.PostConstruct
 import org.springframework.stereotype.Component
 
 
-
 @Component
 class DataLoader (private val songRepository: SongRepository) {
     @PostConstruct
@@ -20,6 +19,6 @@ class DataLoader (private val songRepository: SongRepository) {
 
         )
         songRepository.saveAll(songList)
-        println("cargamos canciones: $songList")
+        println("we load songs: $songList")
     }
 }
