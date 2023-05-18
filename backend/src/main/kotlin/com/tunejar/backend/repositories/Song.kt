@@ -6,8 +6,10 @@ import jakarta.persistence.*
 @Entity
 data class Song(
         @Lob
+        var coverUrl: String,
         var title: String,
         var author: String,
+        var genre: String,
         var releaseYear: Int,
 
         @Id
