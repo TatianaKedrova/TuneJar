@@ -1,6 +1,8 @@
 <script>
     import {onMount} from "svelte";
-    import Header from "./components/header.svelte"
+    import Header from "./header.svelte";
+
+    const file = "src/App.svelte";
 
     let songs = []
 
