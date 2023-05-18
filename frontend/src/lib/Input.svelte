@@ -1,9 +1,13 @@
 <script>
+
+
     let value = ''
     let response = []
     let loading = false
+
     const handleInput = (event) =>
         value = event.target.value
+
 
     /*$: if (value.length > 2) {
         console.log(value)
@@ -22,20 +26,38 @@
 </script>
 
 <input
-        placeholder="Search movies..."
+        placeholder="Search songs..."
         value={value}
         on:input={handleInput}
 />
 
-{#if loading}
+
+
+<!--{#if loading}
     <strong>Loading...</strong>
     {:else}
-    {#if response.length > 0}
-        <strong>Excist ${response.length} movies</strong>
-    {:else}
-        <strong>Result no excist</strong>
-    {/if}
-{/if}
+    {#each response as {CoverUrl, Title, Artist, Year}, index}
+        <Song
+            index={index}
+            coverUrl={CoverUrl}
+            title={Title}
+            artist="{Artist}"
+            year={Year}
+            />
+        <article>
+            <small>#(index)</small>
+            <img> alt={song.Title} src{song.Poster} />
+            <h3>{song.Title}</h3>
+            <span>{song.Year}</span>
+        </article>
+        {:else}
+        <strong>No exist results</strong>
+    {/each}
+{/if}-->
+
+
+
+
 
 
 
