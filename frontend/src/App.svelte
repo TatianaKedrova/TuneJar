@@ -1,6 +1,6 @@
 <script>
     import {onMount} from "svelte";
-    import Header from "./header.svelte";
+    import Header from "./lib/header.svelte";
 
     const file = "src/App.svelte";
 
@@ -15,13 +15,13 @@
 
 
 
-<div class="container">
+<div>
     <Header/>
     <!--<Catalog songs={songs}/>-->
 </div>
 
 <style>
-    .container{
+    div{
         width: 100%;
         height: 100vh;
         background-color: #202334;
