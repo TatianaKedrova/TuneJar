@@ -1,3 +1,17 @@
+<script>
+    import {onMount} from "svelte";
+
+    let songs = []
+
+    onMount(() => {
+        fetch("http://localhost:8081/songs")
+            .then(respuesta => respuesta.json())
+            .then(datos => songs = datos)
+            console.log(songs)
+    })
+</script>
+
+
 <div class="row">
     <div class="col">
         <h1>My playlist</h1>
@@ -5,20 +19,12 @@
 
     <div class="col">
         <div class="card card 1">
-            <h5>Title</h5>
-            <h5>Artist</h5>
         </div>
         <div class="card card 2">
-            <h5>Title</h5>
-            <h5>Artist</h5>
         </div>
         <div class="card card 3">
-            <h5>Title</h5>
-            <h5>Artist</h5>
         </div>
         <div class="card card 4">
-            <h5>Title</h5>
-            <h5>Artist</h5>
         </div>
     </div>
 </div>
@@ -29,27 +35,28 @@
         display: flex;
         height: 88%;
         align-items: center;
-        color: white;
+        color: pink;
     }
 
     .col{
         flex-basis: 50%;
     }
 
-    .card1{
-        background-image: url(/images/);
-    }
+    .card{
+        width: 200px;
+        height: 230px;
+        padding: 15px 25px;
+        margin: 10px 60px;
+        box-sizing: border-box;
 
-    .card2{
-        background-image: url(/images/);
-    }
+        display: inline-block;
 
-    .card3{
-        background-image: url(/images/);
-    }
+        border-radius: 10px;
+        background-color: #11152B;
+        opacity: 0.3;
+        cursor: pointer;
 
-    .card4{
-        background-image: url(/images/);
+        transition: transform 0.3s;
     }
 
     .card:hover{

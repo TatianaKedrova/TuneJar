@@ -18,8 +18,7 @@
 
 <div>
     <Header/>
-    <Catalog/>
-    <!--<Catalog songs={songs}/>-->
+    <Catalog songs={songs}/>
 </div>
 
 <style>
