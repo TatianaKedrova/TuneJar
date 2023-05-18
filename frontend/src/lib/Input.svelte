@@ -1,5 +1,6 @@
 <script>
 
+    import Catalog from "./Catalog.svelte";
 
     let value = ''
     let response = []
@@ -31,29 +32,16 @@
         on:input={handleInput}
 />
 
+<Catalog/>
 
-
-<!--{#if loading}
+{#if loading}
     <strong>Loading...</strong>
     {:else}
     {#each response as {CoverUrl, Title, Artist, Year}, index}
-        <Song
-            index={index}
-            coverUrl={CoverUrl}
-            title={Title}
-            artist="{Artist}"
-            year={Year}
-            />
-        <article>
-            <small>#(index)</small>
-            <img> alt={song.Title} src{song.Poster} />
-            <h3>{song.Title}</h3>
-            <span>{song.Year}</span>
-        </article>
         {:else}
         <strong>No exist results</strong>
     {/each}
-{/if}-->
+{/if}
 
 
 
