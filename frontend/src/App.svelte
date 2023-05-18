@@ -1,6 +1,7 @@
 <script>
     import {onMount} from "svelte";
-    import Header from "./lib/header.svelte";
+    import Header from "./lib/Header.svelte";
+    import Catalog from "./lib/Catalog.svelte";
 
     const file = "src/App.svelte";
 
@@ -17,6 +18,7 @@
 
 <div>
     <Header/>
+    <Catalog/>
     <!--<Catalog songs={songs}/>-->
 </div>
 
