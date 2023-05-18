@@ -1,7 +1,18 @@
+
+<script>
+
+    function handleClick () {
+        name = 'Movies'
+    }
+</script>
+
+
+
 <header>
     <div>
         <img src="/images/logo.png" alt="Logo">
-        <h1>Stream and listen to music</h1>
+        <h1>Hello {name}</h1>
+        <button on:click={handleClick}>Search</button>
     </div>
 </header>
 
@@ -12,15 +23,6 @@
         padding: 42px;
         display: flex;
         justify-content: space-between;
-    }
-
-    header h1 {
-        padding-right: 50px;
-        padding-top: 25px;
-
-        font-size: 30px;
-        font-weight: 400;
-        color: #55BC89;
     }
 </style>
 

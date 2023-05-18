@@ -1,28 +1,30 @@
 <script>
     import {onMount} from "svelte";
     import Header from "./lib/Header.svelte";
-    import Catalog from "./lib/Catalog.svelte";
+    import Input from "./lib/Input.svelte"
 
-    const file = "src/App.svelte";
 
-    let songs = []
+   export let songs = []
 
     onMount(() => {
         fetch("http://localhost:8081/songs")
             .then(respuesta => respuesta.json())
             .then(datos => songs = datos)
     })
+
+
 </script>
 
 
 
-<div>
+<section>
     <Header/>
-    <Catalog songs={songs}/>
-</div>
+    <Input/>
+    <!--<Catalog songs={songs}-->
+</section>
 
 <style>
-    div{
+    section{
         width: 100%;
         height: 100vh;
         background-color: #202334;
