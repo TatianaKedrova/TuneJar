@@ -23,8 +23,8 @@
     <div class="header">
         <img src="/images/logo.png" alt="Logo">
         <div class="input">
-            <input value={value} on:input={handleInput}/>
-            <button on:click={handleClick}>Search</button>
+            <!--<input value={value} on:input={handleInput}/>
+            <button on:click={handleClick}>Search</button>-->
         </div>
 
     </div>
