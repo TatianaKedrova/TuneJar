@@ -29,6 +29,16 @@ class DataLoader (private val songRepository: SongRepository) {
                         "Sparks",
                         "R&B",
                         1974),
+                Song("https://www.rollingstone.com/wp-content/uploads/2021/09/468-mazzy-star-fade-into-you.jpg?w=500",
+                        "Mazzy Star",
+                        "Fade Into You",
+                        "Rock",
+                        1974),
+                Song("https://www.rollingstone.com/wp-content/uploads/2021/09/458-beck-loser.jpeg?w=306",
+                        "Loser",
+                        "Beck",
+                        "Alternative",
+                        1974),
         )
         songRepository.saveAll(songList)
         println("we load songs: $songList")
