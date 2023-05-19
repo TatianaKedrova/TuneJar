@@ -35,7 +35,6 @@
         justify-content: space-between;
         padding: 42px;
     }
-
     .input{
        margin: 40px;
     }

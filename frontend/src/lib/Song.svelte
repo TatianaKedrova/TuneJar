@@ -3,7 +3,6 @@
 </script>
 
 <section>
-
     <div class="card">
     <img src={song.coverUrl} alt="CoverUrl">
     <p>{song.title}</p>
@@ -14,9 +13,6 @@
 </section>
 
 <style>
-
-
-
     img {
         width: 150px;
     }
@@ -26,20 +22,15 @@
         font-weight: 400;
         font-size: 1em;
         text-align: center;
-        line-height: 1px;
+        line-height: 0.7em;
     }
 
     .card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
         margin: 10px 10px;
-
+        padding: 20px 28px;
 
         width: 200px;
         height: 320px;
-
-        padding: 20px 28px;
 
         box-sizing: border-box;
 
@@ -53,4 +44,5 @@
     .card:hover{
         transform: translateY(-10px);
     }
+
 </style>
