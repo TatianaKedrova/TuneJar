@@ -2,8 +2,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
 
 <script>
-
-
     let like = false;
 </script>
 
@@ -21,8 +19,7 @@
 </div>
 
 <style>
- span{
-     color: deeppink;
- ;
- }
+     span{
+         color: deeppink;
+     }
 </style>

@@ -33,7 +33,7 @@
         padding: 20px 28px;
 
         width: 200px;
-        height: 320px;
+        height: 340px;
 
         box-sizing: border-box;
 

@@ -20,7 +20,7 @@
         display: grid;
         justify-items: flex-end;
         margin-right: 200px;
-        margin-top: 25px;
+
     }
   .div_song{
       display: grid;
