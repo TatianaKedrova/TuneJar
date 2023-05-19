@@ -9,11 +9,11 @@ class DataLoader (private val songRepository: SongRepository) {
     @PostConstruct
     fun load() {
         val songList = listOf(
-                Song("https://www.google.com/url?sa=i&url=https%3A%2F%2Fopen.spotify.com%2Ftrack%2F24tndOV6pnJOXEccM6vImO&psig=AOvVaw0CVymnuFiconjCiGHP9W9f&ust=1684492809841000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPCQvu7W_v4CFQAAAAAdAAAAABAE",
-                "Smells Like Teen Spirit",
-                        "Nirvana",
-                        "Rock",
-                        1991),
+                Song("https://www.rollingstone.com/wp-content/uploads/2021/09/497-kanye-west-stronger.jpg?w=500",
+                "Stronger",
+                        "Kanye West",
+                        "Rap",
+                        2007),
                 Song("https://www.rollingstone.com/wp-content/uploads/2020/09/R1344-491-harry-styles-fine-line.jpg?w=1000",
                         "Fine Line",
                         "Harry Styles",
