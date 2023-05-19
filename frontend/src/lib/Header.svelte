@@ -3,27 +3,41 @@
     let name  = "TuneJar"
 
     function handleClick () {
-        name = 'Songs'
+        name = ''
     }
+
+    let value = ''
+
+    const handleInput = (event) =>
+        value = event.target.value
+
 </script>
 
 
 
 <header>
-    <div>
+    <div class="header">
         <img src="/images/logo.png" alt="Logo">
-        <h1>Hello {name}</h1>
-        <button on:click={handleClick}>Search</button>
+        <div class="input">
+            <input value={value} on:input{handleInput} />
+            <button on:click={handleClick}>Search</button>
+        </div>
+
     </div>
 </header>
 
 
 
 <style>
-    div{
-        padding: 42px;
+    .header {
+        position: relative;
         display: flex;
         justify-content: space-between;
+        padding: 42px;
+    }
+
+    .input{
+       margin: 40px;
     }
 </style>
 

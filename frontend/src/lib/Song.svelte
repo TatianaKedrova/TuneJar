@@ -18,7 +18,7 @@
 
 
     img {
-        width: 250px;
+        width: 150px;
     }
 
     p {
@@ -26,19 +26,21 @@
         font-weight: 400;
         font-size: 1em;
         text-align: center;
-        line-height: 0.1em;
+        line-height: 1px;
     }
 
     .card{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
+        margin: 10px 10px;
 
-        width: 300px;
-        height: 420px;
+
+        width: 200px;
+        height: 320px;
 
         padding: 20px 28px;
-        margin: 10px 60px;
+
         box-sizing: border-box;
 
         border-radius: 10px;
