@@ -1,14 +1,17 @@
 <script>
+    import Heart from "./Heart.svelte";
+    import Header from "./Header.svelte";
     export let song;
 </script>
 
 <section>
     <div class="card">
-    <img src={song.coverUrl} alt="CoverUrl">
-    <p>{song.title}</p>
-    <p>{song.author}</p>
-    <p>{song.genre}</p>
-    <p>{song.releaseYear}</p>
+            <img src={song.coverUrl} alt="CoverUrl">
+            <p>{song.title}</p>
+            <p>{song.author}</p>
+            <p>{song.genre}</p>
+            <p>{song.releaseYear}</p>
+        <Heart/>
     </div>
 </section>
 
