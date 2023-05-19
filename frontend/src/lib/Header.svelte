@@ -3,13 +3,17 @@
     let name  = "TuneJar"
 
     function handleClick () {
-        name = ''
+        name = 'Hola'
     }
 
     let value = ''
 
     const handleInput = (event) =>
         value = event.target.value
+
+    $: {
+        console.log(value)
+    }
 
 </script>
 
@@ -19,7 +23,7 @@
     <div class="header">
         <img src="/images/logo.png" alt="Logo">
         <div class="input">
-            <input value={value} on:input{handleInput} />
+            <input value={value} on:input={handleInput}/>
             <button on:click={handleClick}>Search</button>
         </div>
 
