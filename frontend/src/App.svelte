@@ -5,6 +5,7 @@
 
 
    export let songs = []
+
     onMount(() => {
         fetch("http://localhost:8081/songs")
             .then(respuesta => respuesta.json())
@@ -16,9 +17,7 @@
 <section>
     <Header/>
     <Catalog songs={songs}/>
-
 </section>
-
 
 
 <style>
