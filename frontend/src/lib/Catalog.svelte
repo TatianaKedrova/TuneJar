@@ -1,25 +1,20 @@
+
 <script>
-   export let index, title, artist,  coverUrl, year
-   export let songs = []
+        import Song from "./Song.svelte";
+        export let songs;
+
 </script>
+
 
 <style></style>
 
+<section>
+    <Song/>
+    <div class="songs-list">
+        <h3 class="catalog">Catalog</h3>
+        {#each songs as info}
+            <Song song={info}/>
+        {/each}
+    </div>
+</section>
 
-
-{#each songs as {CoverUrl, Title, Artist, Year}, index}
-    <Song
-            index={Index}
-            coverUrl={CoverUrl}
-            title={Title}
-            artist="{Artist}"
-            year={Year}
-    />
-    <article>
-        <small>#(index)</small>
-        <img> alt={songs.title} src{songs.coverUrl} />
-        <h3>{songs.title}</h3>
-        <h3>{songs.artist}</h3>
-        <span>{songs.year}</span>
-    </article>
-{/each}

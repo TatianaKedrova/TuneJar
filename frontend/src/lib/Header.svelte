@@ -1,8 +1,9 @@
 
 <script>
+    let name  = "TuneJar"
 
     function handleClick () {
-        name = 'Movies'
+        name = 'Songs'
     }
 </script>
 

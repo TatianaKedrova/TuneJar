@@ -14,14 +14,14 @@
 </script>
 
 
-
 <section>
     <Header/>
     <Input/>
-    <!--<Catalog songs={songs}>-->
-    <Catalog/>
+    <Catalog songs={songs}/>
 
 </section>
+
+
 
 <style>
     section{
