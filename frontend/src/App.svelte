@@ -1,7 +1,6 @@
 <script>
     import {onMount} from "svelte";
     import Header from "./lib/Header.svelte";
-    import Input from "./lib/Input.svelte"
     import Catalog from "./lib/Catalog.svelte";
 
 
@@ -16,7 +15,6 @@
 
 <section>
     <Header/>
-    <Input/>
     <Catalog songs={songs}/>
 
 </section>
